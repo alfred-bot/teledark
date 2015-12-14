@@ -5,7 +5,7 @@ do
 local function create_group(msg)
     -- superuser and admins only (because sudo are always has privilege)
     if not is_admin(msg) then
-return "برای ساخت گروه ضد اسپم با @AmirDark در ارتباط باشید"
+return "برای ساخت گروه ضد اسپم با @AmirDark  در ارتباط باشید"
     end
     local group_creator = msg.from.print_name
     create_group_chat (group_creator, group_name, ok_cb, false)
